@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <View
+        android:id="@+id/glowOrb2"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:alpha="0.18"
+        android:background="@drawable/bg_splash_orb_purple"
+        app:layout_constraintBottom_toBottomOf="@id/glowOrb1"
+        app:layout_constraintEnd_toEndOf="@id/glowOrb1"
+        app:layout_constraintStart_toStartOf="@id/glowOrb1"
+        app:layout_constraintTop_toTopOf="@id/glowOrb1" />
+
+    <View
+        android:id="@+id/glowOrb1"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:alpha="0.4"
+        android:background="@drawable/bg_splash_orb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <View
+        android:id="@+id/ringOuter"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/bg_splash_ring"
+        app:layout_constraintBottom_toBottomOf="@id/glowOrb1"
+        app:layout_constraintEnd_toEndOf="@id/glowOrb1"
+        app:layout_constraintStart_toStartOf="@id/glowOrb1"
+        app:layout_constraintTop_toTopOf="@id/glowOrb1" />
+
+    <View
+        android:id="@+id/ringMid"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:background="@drawable/bg_splash_ring_inner"
+        app:layout_constraintBottom_toBottomOf="@id/glowOrb1"
+        app:layout_constraintEnd_toEndOf="@id/glowOrb1"
+        app:layout_constraintStart_toStartOf="@id/glowOrb1"
+        app:layout_constraintTop_toTopOf="@id/glowOrb1" />
+
+    <View
+        android:id="@+id/ringInner"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_splash_ring"
+        app:layout_constraintBottom_toBottomOf="@id/glowOrb1"
+        app:layout_constraintEnd_toEndOf="@id/glowOrb1"
+        app:layout_constraintStart_toStartOf="@id/glowOrb1"
+        app:layout_constraintTop_toTopOf="@id/glowOrb1" />
+
+    <View
+        android:id="@+id/splashLogoGlow"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:alpha="0"
+        android:background="@drawable/bg_splash_orb"
+        app:layout_constraintBottom_toBottomOf="@id/glowOrb1"
+        app:layout_constraintEnd_toEndOf="@id/glowOrb1"
+        app:layout_constraintStart_toStartOf="@id/glowOrb1"
+        app:layout_constraintTop_toTopOf="@id/glowOrb1" />
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/docscanner_logo_512"
+        app:layout_constraintBottom_toBottomOf="@id/glowOrb1"
+        app:layout_constraintEnd_toEndOf="@id/glowOrb1"
+        app:layout_constraintStart_toStartOf="@id/glowOrb1"
+        app:layout_constraintTop_toTopOf="@id/glowOrb1" />
+
+    <View
+        android:id="@+id/particle1"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:alpha="0"
+        android:background="@drawable/bg_splash_particle"
+        app:layout_constraintCircle="@id/glowOrb1"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="130dp" />
+
+    <View
+        android:id="@+id/particle2"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:alpha="0"
+        android:background="@drawable/bg_splash_particle"
+        app:layout_constraintCircle="@id/glowOrb1"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="115dp" />
+
+    <View
+        android:id="@+id/particle3"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:alpha="0"
+        android:background="@drawable/bg_splash_particle"
+        app:layout_constraintCircle="@id/glowOrb1"
+        app:layout_constraintCircleAngle="240"
+        app:layout_constraintCircleRadius="125dp" />
+
+    <TextView
+        android:id="@+id/splashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:alpha="0"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.08"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/glowOrb1" />
+
+    <TextView
+        android:id="@+id/splashTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:text="@string/splash_tagline"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splashTitle" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splashProgress"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="56dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        app:indicatorColor="@color/accent_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="@color/glass_white"
+        app:trackCornerRadius="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

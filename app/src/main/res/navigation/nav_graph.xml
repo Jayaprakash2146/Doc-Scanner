@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.docscanner.app.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_camera"
+            app:destination="@id/cameraFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_dashboard_to_convert"
+            app:destination="@id/fileConvertFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_dashboard_to_compress"
+            app:destination="@id/fileCompressFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_dashboard_to_merge"
+            app:destination="@id/fileMergeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_dashboard_to_encrypt"
+            app:destination="@id/fileEncryptFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_dashboard_to_editor"
+            app:destination="@id/editorFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileCompressFragment"
+        android:name="com.docscanner.app.ui.compress.FileCompressFragment"
+        android:label="Compress" />
+
+    <fragment
+        android:id="@+id/fileMergeFragment"
+        android:name="com.docscanner.app.ui.merge.FileMergeFragment"
+        android:label="Merge PDFs" />
+
+    <fragment
+        android:id="@+id/fileEncryptFragment"
+        android:name="com.docscanner.app.ui.encrypt.FileEncryptFragment"
+        android:label="Encrypt" />
+
+    <fragment
+        android:id="@+id/fileConvertFragment"
+        android:name="com.docscanner.app.ui.convert.FileConvertFragment"
+        android:label="Convert">
+        <action
+            android:id="@+id/action_convert_to_run"
+            app:destination="@id/fileConvertRunFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileConvertRunFragment"
+        android:name="com.docscanner.app.ui.convert.FileConvertRunFragment"
+        android:label="Convert File">
+        <argument
+            android:name="conversionType"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.docscanner.app.ui.camera.CameraFragment"
+        android:label="Camera">
+        <action
+            android:id="@+id/action_camera_to_crop"
+            app:destination="@id/cropAdjustFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_camera_to_editor"
+            app:destination="@id/editorFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cropAdjustFragment"
+        android:name="com.docscanner.app.ui.crop.CropAdjustFragment"
+        android:label="Adjust">
+        <action
+            android:id="@+id/action_crop_to_camera"
+            app:destination="@id/cameraFragment"
+            app:popUpTo="@id/cameraFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_crop_to_editor"
+            app:destination="@id/editorFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.docscanner.app.ui.editor.EditorFragment"
+        android:label="Editor">
+        <action
+            android:id="@+id/action_editor_to_camera"
+            app:destination="@id/cameraFragment"
+            app:popUpTo="@id/cameraFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

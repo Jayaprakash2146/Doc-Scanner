@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- High-Contrast Light Theme -->
+    <color name="primary">#1D4ED8</color>
+    <color name="primary_light">#DBEAFE</color>
+    <color name="primary_dark">#172554</color>
+    <color name="primary_container">#EFF6FF</color>
+
+    <color name="secondary">#F8FAFC</color>
+    <color name="secondary_surface">#F1F5F9</color>
+    <color name="secondary_muted">#E2E8F0</color>
+    <color name="on_secondary">#0F172A</color>
+
+    <color name="accent">#F97316</color>
+    <color name="accent_cyan">#06B6D4</color>
+    <color name="accent_purple">#7C3AED</color>
+
+    <!-- Dark Text Colors -->
+    <color name="text_primary">#020617</color>
+    <color name="text_secondary">#334155</color>
+    <color name="divider">#CBD5E1</color>
+
+    <!-- Functional Colors -->
+    <color name="ic_launcher_background">#1D4ED8</color>
+    <color name="splash_background">#DBEAFE</color>
+    <color name="scanner_overlay">#80000000</color>
+    <color name="accent_blue">#1D4ED8</color>
+    <color name="accent_blue_dark">#172554</color>
+    <color name="accent_glow">#401D4ED8</color>
+    <color name="document_detected">#16A34A</color>
+    <color name="document_idle">#64748B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#020617</color>
+    <color name="glass_white">#F2F1F5F9</color>
+    <color name="glass_stroke">#94A3B8</color>
+    <color name="premium_gold">#D97706</color>
+    <color name="gradient_start">#DBEAFE</color>
+    <color name="gradient_mid">#F1F5F9</color>
+    <color name="gradient_end">#FFFFFF</color>
+    <color name="card_3d">#FFFFFF</color>
+    <color name="fab_shadow">#4D1D4ED8</color>
+</resources>

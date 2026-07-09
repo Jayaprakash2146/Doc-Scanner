@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="files" path="." />
+    <files-path name="scans" path="scans/" />
+    <cache-path name="cache" path="." />
+    <cache-path name="conversions" path="conversions/" />
+    <cache-path name="compress" path="compress/" />
+    <cache-path name="merge" path="merge/" />
+    <cache-path name="encrypt" path="encrypt/" />
+    <cache-path name="cache_scans" path="." />
+    <external-path name="external" path="." />
+    <external-files-path name="external_files" path="." />
+    <external-files-path name="downloads_export" path="DocumentsScanner/" />
+</paths>
